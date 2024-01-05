@@ -1,0 +1,444 @@
+# uncompyle6 version 3.9.0
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)]
+# Embedded file name: C:\TeamCity\buildAgent\work\dc8eb0b1d2cf198a\Main\client\standalone\build\pyi.win32\run_obfuscated\out00-PYZ.pyz\pyglet.libs.win32.dinput
+import ctypes
+from pyglet import com
+lib = ctypes.oledll.dinput8
+LPVOID = ctypes.c_void_p
+WORD = ctypes.c_uint16
+DWORD = ctypes.c_uint32
+LPDWORD = ctypes.POINTER(DWORD)
+BOOL = ctypes.c_int
+WCHAR = ctypes.c_wchar
+UINT = ctypes.c_uint
+HWND = ctypes.c_uint32
+HANDLE = LPVOID
+MAX_PATH = 260
+DIENUM_STOP = 0
+DIENUM_CONTINUE = 1
+DIEDFL_ALLDEVICES = 0
+DIEDFL_ATTACHEDONLY = 1
+DIEDFL_FORCEFEEDBACK = 256
+DIEDFL_INCLUDEALIASES = 65536
+DIEDFL_INCLUDEPHANTOMS = 131072
+DIEDFL_INCLUDEHIDDEN = 262144
+DI8DEVCLASS_ALL = 0
+DI8DEVCLASS_DEVICE = 1
+DI8DEVCLASS_POINTER = 2
+DI8DEVCLASS_KEYBOARD = 3
+DI8DEVCLASS_GAMECTRL = 4
+DI8DEVTYPE_DEVICE = 17
+DI8DEVTYPE_MOUSE = 18
+DI8DEVTYPE_KEYBOARD = 19
+DI8DEVTYPE_JOYSTICK = 20
+DI8DEVTYPE_GAMEPAD = 21
+DI8DEVTYPE_DRIVING = 22
+DI8DEVTYPE_FLIGHT = 23
+DI8DEVTYPE_1STPERSON = 24
+DI8DEVTYPE_DEVICECTRL = 25
+DI8DEVTYPE_SCREENPOINTER = 26
+DI8DEVTYPE_REMOTE = 27
+DI8DEVTYPE_SUPPLEMENTAL = 28
+DI8DEVTYPEMOUSE_UNKNOWN = 1
+DI8DEVTYPEMOUSE_TRADITIONAL = 2
+DI8DEVTYPEMOUSE_FINGERSTICK = 3
+DI8DEVTYPEMOUSE_TOUCHPAD = 4
+DI8DEVTYPEMOUSE_TRACKBALL = 5
+DI8DEVTYPEMOUSE_ABSOLUTE = 6
+DI8DEVTYPEKEYBOARD_UNKNOWN = 0
+DI8DEVTYPEKEYBOARD_PCXT = 1
+DI8DEVTYPEKEYBOARD_OLIVETTI = 2
+DI8DEVTYPEKEYBOARD_PCAT = 3
+DI8DEVTYPEKEYBOARD_PCENH = 4
+DI8DEVTYPEKEYBOARD_NOKIA1050 = 5
+DI8DEVTYPEKEYBOARD_NOKIA9140 = 6
+DI8DEVTYPEKEYBOARD_NEC98 = 7
+DI8DEVTYPEKEYBOARD_NEC98LAPTOP = 8
+DI8DEVTYPEKEYBOARD_NEC98106 = 9
+DI8DEVTYPEKEYBOARD_JAPAN106 = 10
+DI8DEVTYPEKEYBOARD_JAPANAX = 11
+DI8DEVTYPEKEYBOARD_J3100 = 12
+DI8DEVTYPE_LIMITEDGAMESUBTYPE = 1
+DI8DEVTYPEJOYSTICK_LIMITED = DI8DEVTYPE_LIMITEDGAMESUBTYPE
+DI8DEVTYPEJOYSTICK_STANDARD = 2
+DI8DEVTYPEGAMEPAD_LIMITED = DI8DEVTYPE_LIMITEDGAMESUBTYPE
+DI8DEVTYPEGAMEPAD_STANDARD = 2
+DI8DEVTYPEGAMEPAD_TILT = 3
+DI8DEVTYPEDRIVING_LIMITED = DI8DEVTYPE_LIMITEDGAMESUBTYPE
+DI8DEVTYPEDRIVING_COMBINEDPEDALS = 2
+DI8DEVTYPEDRIVING_DUALPEDALS = 3
+DI8DEVTYPEDRIVING_THREEPEDALS = 4
+DI8DEVTYPEDRIVING_HANDHELD = 5
+DI8DEVTYPEFLIGHT_LIMITED = DI8DEVTYPE_LIMITEDGAMESUBTYPE
+DI8DEVTYPEFLIGHT_STICK = 2
+DI8DEVTYPEFLIGHT_YOKE = 3
+DI8DEVTYPEFLIGHT_RC = 4
+DI8DEVTYPE1STPERSON_LIMITED = DI8DEVTYPE_LIMITEDGAMESUBTYPE
+DI8DEVTYPE1STPERSON_UNKNOWN = 2
+DI8DEVTYPE1STPERSON_SIXDOF = 3
+DI8DEVTYPE1STPERSON_SHOOTER = 4
+DI8DEVTYPESCREENPTR_UNKNOWN = 2
+DI8DEVTYPESCREENPTR_LIGHTGUN = 3
+DI8DEVTYPESCREENPTR_LIGHTPEN = 4
+DI8DEVTYPESCREENPTR_TOUCH = 5
+DI8DEVTYPEREMOTE_UNKNOWN = 2
+DI8DEVTYPEDEVICECTRL_UNKNOWN = 2
+DI8DEVTYPEDEVICECTRL_COMMSSELECTION = 3
+DI8DEVTYPEDEVICECTRL_COMMSSELECTION_HARDWIRED = 4
+DI8DEVTYPESUPPLEMENTAL_UNKNOWN = 2
+DI8DEVTYPESUPPLEMENTAL_2NDHANDCONTROLLER = 3
+DI8DEVTYPESUPPLEMENTAL_HEADTRACKER = 4
+DI8DEVTYPESUPPLEMENTAL_HANDTRACKER = 5
+DI8DEVTYPESUPPLEMENTAL_SHIFTSTICKGATE = 6
+DI8DEVTYPESUPPLEMENTAL_SHIFTER = 7
+DI8DEVTYPESUPPLEMENTAL_THROTTLE = 8
+DI8DEVTYPESUPPLEMENTAL_SPLITTHROTTLE = 9
+DI8DEVTYPESUPPLEMENTAL_COMBINEDPEDALS = 10
+DI8DEVTYPESUPPLEMENTAL_DUALPEDALS = 11
+DI8DEVTYPESUPPLEMENTAL_THREEPEDALS = 12
+DI8DEVTYPESUPPLEMENTAL_RUDDERPEDALS = 13
+DIDC_ATTACHED = 1
+DIDC_POLLEDDEVICE = 2
+DIDC_EMULATED = 4
+DIDC_POLLEDDATAFORMAT = 8
+DIDC_FORCEFEEDBACK = 256
+DIDC_FFATTACK = 512
+DIDC_FFFADE = 1024
+DIDC_SATURATION = 2048
+DIDC_POSNEGCOEFFICIENTS = 4096
+DIDC_POSNEGSATURATION = 8192
+DIDC_DEADBAND = 16384
+DIDC_STARTDELAY = 32768
+DIDC_ALIAS = 65536
+DIDC_PHANTOM = 131072
+DIDC_HIDDEN = 262144
+
+def DIDFT_GETINSTANCE(n):
+    return n >> 8 & 65535
+
+
+DIDFT_ALL = 0
+DIDFT_RELAXIS = 1
+DIDFT_ABSAXIS = 2
+DIDFT_AXIS = 3
+DIDFT_PSHBUTTON = 4
+DIDFT_TGLBUTTON = 8
+DIDFT_BUTTON = 12
+DIDFT_POV = 16
+DIDFT_COLLECTION = 64
+DIDFT_NODATA = 128
+DIDFT_ANYINSTANCE = 16776960
+DIDFT_INSTANCEMASK = DIDFT_ANYINSTANCE
+DIDFT_FFACTUATOR = 16777216
+DIDFT_FFEFFECTTRIGGER = 33554432
+DIDFT_OUTPUT = 268435456
+DIDFT_VENDORDEFINED = 67108864
+DIDFT_ALIAS = 134217728
+DIDFT_OPTIONAL = 2147483648
+DIDFT_NOCOLLECTION = 16776960
+DIA_FORCEFEEDBACK = 1
+DIA_APPMAPPED = 2
+DIA_APPNOMAP = 4
+DIA_NORANGE = 8
+DIA_APPFIXED = 16
+DIAH_UNMAPPED = 0
+DIAH_USERCONFIG = 1
+DIAH_APPREQUESTED = 2
+DIAH_HWAPP = 4
+DIAH_HWDEFAULT = 8
+DIAH_DEFAULT = 32
+DIAH_ERROR = 2147483648
+DIAFTS_NEWDEVICELOW = 4294967295
+DIAFTS_NEWDEVICEHIGH = 4294967295
+DIAFTS_UNUSEDDEVICELOW = 0
+DIAFTS_UNUSEDDEVICEHIGH = 0
+DIDBAM_DEFAULT = 0
+DIDBAM_PRESERVE = 1
+DIDBAM_INITIALIZE = 2
+DIDBAM_HWDEFAULTS = 4
+DIDSAM_DEFAULT = 0
+DIDSAM_NOUSER = 1
+DIDSAM_FORCESAVE = 2
+DICD_DEFAULT = 0
+DICD_EDIT = 1
+DIDOI_FFACTUATOR = 1
+DIDOI_FFEFFECTTRIGGER = 2
+DIDOI_POLLED = 32768
+DIDOI_ASPECTPOSITION = 256
+DIDOI_ASPECTVELOCITY = 512
+DIDOI_ASPECTACCEL = 768
+DIDOI_ASPECTFORCE = 1024
+DIDOI_ASPECTMASK = 3840
+DIDOI_GUIDISUSAGE = 65536
+DIPH_DEVICE = 0
+DIPH_BYOFFSET = 1
+DIPH_BYID = 2
+DIPH_BYUSAGE = 3
+DISCL_EXCLUSIVE = 1
+DISCL_NONEXCLUSIVE = 2
+DISCL_FOREGROUND = 4
+DISCL_BACKGROUND = 8
+DISCL_NOWINKEY = 16
+DIPROP_BUFFERSIZE = 1
+GUID_XAxis = com.GUID(2741830368, 51699, 4559, 191, 199, 68, 69, 83, 84, 0, 0)
+
+class DIDEVICEINSTANCE(ctypes.Structure):
+    _fields_ = (
+     (
+      'dwSize', DWORD),
+     (
+      'guidInstance', com.GUID),
+     (
+      'guidProduct', com.GUID),
+     (
+      'dwDevType', DWORD),
+     (
+      'tszInstanceName', WCHAR * MAX_PATH),
+     (
+      'tszProductName', WCHAR * MAX_PATH),
+     (
+      'guidFFDriver', com.GUID),
+     (
+      'wUsagePage', WORD),
+     (
+      'wUsage', WORD))
+
+
+LPDIDEVICEINSTANCE = ctypes.POINTER(DIDEVICEINSTANCE)
+LPDIENUMDEVICESCALLBACK = ctypes.WINFUNCTYPE(BOOL, LPDIDEVICEINSTANCE, LPVOID)
+
+class DIDEVICEOBJECTINSTANCE(ctypes.Structure):
+    _fields_ = (
+     (
+      'dwSize', DWORD),
+     (
+      'guidType', com.GUID),
+     (
+      'dwOfs', DWORD),
+     (
+      'dwType', DWORD),
+     (
+      'dwFlags', DWORD),
+     (
+      'tszName', WCHAR * MAX_PATH),
+     (
+      'dwFFMaxForce', DWORD),
+     (
+      'dwFFForceResolution', DWORD),
+     (
+      'wCollectionNumber', WORD),
+     (
+      'wDesignatorIndex', WORD),
+     (
+      'wUsagePage', WORD),
+     (
+      'wUsage', WORD),
+     (
+      'dwDimension', DWORD),
+     (
+      'wExponent', WORD),
+     (
+      'wReportId', WORD))
+
+
+LPDIDEVICEOBJECTINSTANCE = ctypes.POINTER(DIDEVICEOBJECTINSTANCE)
+LPDIENUMDEVICEOBJECTSCALLBACK = ctypes.WINFUNCTYPE(BOOL, LPDIDEVICEOBJECTINSTANCE, LPVOID)
+
+class DIOBJECTDATAFORMAT(ctypes.Structure):
+    _fields_ = (
+     (
+      'pguid', ctypes.POINTER(com.GUID)),
+     (
+      'dwOfs', DWORD),
+     (
+      'dwType', DWORD),
+     (
+      'dwFlags', DWORD))
+    __slots__ = [ n for n, t in _fields_ ]
+
+
+LPDIOBJECTDATAFORMAT = ctypes.POINTER(DIOBJECTDATAFORMAT)
+
+class DIDATAFORMAT(ctypes.Structure):
+    _fields_ = (
+     (
+      'dwSize', DWORD),
+     (
+      'dwObjSize', DWORD),
+     (
+      'dwFlags', DWORD),
+     (
+      'dwDataSize', DWORD),
+     (
+      'dwNumObjs', DWORD),
+     (
+      'rgodf', LPDIOBJECTDATAFORMAT))
+    __slots__ = [ n for n, t in _fields_ ]
+
+
+LPDIDATAFORMAT = ctypes.POINTER(DIDATAFORMAT)
+
+class DIDEVICEOBJECTDATA(ctypes.Structure):
+    _fields_ = (
+     (
+      'dwOfs', DWORD),
+     (
+      'dwData', DWORD),
+     (
+      'dwTimeStamp', DWORD),
+     (
+      'dwSequence', DWORD),
+     (
+      'uAppData', ctypes.POINTER(UINT)))
+
+
+LPDIDEVICEOBJECTDATA = ctypes.POINTER(DIDEVICEOBJECTDATA)
+
+class DIPROPHEADER(ctypes.Structure):
+    _fields_ = (
+     (
+      'dwSize', DWORD),
+     (
+      'dwHeaderSize', DWORD),
+     (
+      'dwObj', DWORD),
+     (
+      'dwHow', DWORD))
+
+
+LPDIPROPHEADER = ctypes.POINTER(DIPROPHEADER)
+
+class DIPROPDWORD(ctypes.Structure):
+    _fields_ = (
+     (
+      'diph', DIPROPHEADER),
+     (
+      'dwData', DWORD))
+
+
+class IDirectInputDevice8(com.IUnknown):
+    _methods_ = [
+     (
+      'GetCapabilities',
+      com.STDMETHOD()),
+     (
+      'EnumObjects',
+      com.STDMETHOD(LPDIENUMDEVICEOBJECTSCALLBACK, LPVOID, DWORD)),
+     (
+      'GetProperty',
+      com.STDMETHOD()),
+     (
+      'SetProperty',
+      com.STDMETHOD(LPVOID, LPDIPROPHEADER)),
+     (
+      'Acquire',
+      com.STDMETHOD()),
+     (
+      'Unacquire',
+      com.STDMETHOD()),
+     (
+      'GetDeviceState',
+      com.STDMETHOD()),
+     (
+      'GetDeviceData',
+      com.STDMETHOD(DWORD, LPDIDEVICEOBJECTDATA, LPDWORD, DWORD)),
+     (
+      'SetDataFormat',
+      com.STDMETHOD(LPDIDATAFORMAT)),
+     (
+      'SetEventNotification',
+      com.STDMETHOD(HANDLE)),
+     (
+      'SetCooperativeLevel',
+      com.STDMETHOD(HWND, DWORD)),
+     (
+      'GetObjectInfo',
+      com.STDMETHOD()),
+     (
+      'GetDeviceInfo',
+      com.STDMETHOD()),
+     (
+      'RunControlPanel',
+      com.STDMETHOD()),
+     (
+      'Initialize',
+      com.STDMETHOD()),
+     (
+      'CreateEffect',
+      com.STDMETHOD()),
+     (
+      'EnumEffects',
+      com.STDMETHOD()),
+     (
+      'GetEffectInfo',
+      com.STDMETHOD()),
+     (
+      'GetForceFeedbackState',
+      com.STDMETHOD()),
+     (
+      'SendForceFeedbackCommand',
+      com.STDMETHOD()),
+     (
+      'EnumCreatedEffectObjects',
+      com.STDMETHOD()),
+     (
+      'Escape',
+      com.STDMETHOD()),
+     (
+      'Poll',
+      com.STDMETHOD()),
+     (
+      'SendDeviceData',
+      com.STDMETHOD()),
+     (
+      'EnumEffectsInFile',
+      com.STDMETHOD()),
+     (
+      'WriteEffectToFile',
+      com.STDMETHOD()),
+     (
+      'BuildActionMap',
+      com.STDMETHOD()),
+     (
+      'SetActionMap',
+      com.STDMETHOD()),
+     (
+      'GetImageInfo',
+      com.STDMETHOD())]
+
+
+class IDirectInput8(com.IUnknown):
+    _methods_ = [
+     (
+      'CreateDevice',
+      com.STDMETHOD(ctypes.POINTER(com.GUID), ctypes.POINTER(IDirectInputDevice8), ctypes.c_void_p)),
+     (
+      'EnumDevices',
+      com.STDMETHOD(DWORD, LPDIENUMDEVICESCALLBACK, LPVOID, DWORD)),
+     (
+      'GetDeviceStatus',
+      com.STDMETHOD()),
+     (
+      'RunControlPanel',
+      com.STDMETHOD()),
+     (
+      'Initialize',
+      com.STDMETHOD()),
+     (
+      'FindDevice',
+      com.STDMETHOD()),
+     (
+      'EnumDevicesBySemantics',
+      com.STDMETHOD()),
+     (
+      'ConfigureDevices',
+      com.STDMETHOD())]
+
+
+IID_IDirectInput8W = com.GUID(3212410929, 18490, 19874, 170, 153, 93, 100, 237, 54, 151, 0)
+DIRECTINPUT_VERSION = 2048
+DirectInput8Create = lib.DirectInput8Create
+DirectInput8Create.argtypes = (
+ ctypes.c_void_p, DWORD, com.LPGUID, ctypes.c_void_p, ctypes.c_void_p)
+# okay decompiling out\pyglet.libs.win32.dinput.pyc
